@@ -26,13 +26,11 @@ THE SOFTWARE.
   Displays two projects side by side and show their relationship
 -->
 <?jelly escape-by-default='true'?>
-<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
-  <l:layout title="${%Project Relationship}">
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <l:layout title="${%Project Relationship}" type="one-column">
     <l:app-bar title="${%Project Relationship}">
       <t:help href="projectRelationship-help" />
     </l:app-bar>
-
-    <st:include page="sidepanel.jelly" />
 
     <l:main-panel>
       <form action="projectRelationship" method="get">

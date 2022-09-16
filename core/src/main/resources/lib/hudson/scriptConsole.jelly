@@ -27,8 +27,7 @@ THE SOFTWARE.
 -->
 <?jelly escape-by-default='true'?>
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:f="/lib/form">
-  <l:layout permission="${h.ADMINISTER}" title="${%Script Console}">
-    <st:include page="sidepanel.jelly" />
+  <l:layout permission="${h.ADMINISTER}" title="${%Script Console}" type="one-column">
 
     <l:breadcrumb title="${%Script Console}"/>
     <l:main-panel>
