@@ -56,6 +56,13 @@ THE SOFTWARE.
     </dependencies>
   </dependencyManagement>
 
+  <repositories>
+    <repository>
+        <id>incrementals.jenkins-ci.org</id>
+      <url>https://repo.jenkins-ci.org/artifactory/incrementals/</url>
+    </repository>
+  </repositories>
+
   <dependencies>
     <dependency>
       <groupId>${project.groupId}</groupId>
@@ -677,7 +684,7 @@ THE SOFTWARE.
         <!-- generate Jelly tag lib documentation -->
         <groupId>org.kohsuke.stapler</groupId>
         <artifactId>maven-stapler-plugin</artifactId>
-        <!-- Version specified in grandparent POM -->
+        <version>1.24-rc168.ccdd65980e2b_</version>
         <configuration>
           <patterns>
             <pattern>/lib/.*</pattern>
